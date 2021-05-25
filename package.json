@@ -1,0 +1,19 @@
+{
+  "name": "documenting-custom-commands",
+  "version": "1.0.0",
+  "description": "Project for live 20 of Talking About Testing YouTube channel",
+  "scripts": {
+    "test": "cypress run --reporter nyan",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "cypress.io",
+    "cypress custom commands",
+    "cypress custom commands docs"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^7.4.0"
+  }
+}
