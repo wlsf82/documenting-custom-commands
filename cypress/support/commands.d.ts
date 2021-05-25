@@ -3,7 +3,7 @@
 declare namespace Cypress {
   interface Chainable {
     /** 
-     * Searches by the specified term by typing and pressing ENTER
+     * Searches for the specified term by typing and pressing ENTER
      * 
      * @example cy.search('cypress.io')
      */
@@ -13,7 +13,7 @@ declare namespace Cypress {
      *
      * '.results .result:not([class="result result--more"])'
      *
-     * Meaning that it searches for all results but the 'More results' button
+     * This means that it searches for all results but the 'More results' button
      * 
      * @example cy.countResults().should('be.equal', 10)
      */
