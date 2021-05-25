@@ -36,7 +36,7 @@ declare namespace Cypress {
      * @param term string
      * @example
      *  cy.searchMapFor('cypress.io')
-     *  cy.searchMapFor(variableWithAStringAsValue
+     *  cy.searchMapFor(variableWithAStringAsValue)
      */
     searchMapsFor(term: string):Cypress.Chainable<JQuery<HTMLElement>>
   }

@@ -12,8 +12,8 @@ describe('DuckDuckGo', () => {
     })
   })
 
-  it('searches images', () => {
-    cy.searchMapsFor('Amsterdam')
+  it('searches maps', () => {
+    cy.searchMapsFor('Amsterdam Zuid')
 
     cy.get('[class*=--map]').should('be.visible')
   })
