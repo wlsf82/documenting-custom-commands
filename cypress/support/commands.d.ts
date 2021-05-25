@@ -23,14 +23,20 @@ declare namespace Cypress {
     /**
      * Searches for the specified term by typing and pressing ENTER
      *
-     * @example cy.search('cypress.io')
+     * @param term string
+     * @example
+     *  cy.search('cypress.io')
+     *  cy.search(variableWithAStringAsValue)
      */
     search(term: string): Cypress.Chainable<JQuery<HTMLElement>>
 
     /**
      * Searches by a term and goes to the maps view
      * 
-     * @example cy.searchMapFor('cypress.io')
+     * @param term string
+     * @example
+     *  cy.searchMapFor('cypress.io')
+     *  cy.searchMapFor(variableWithAStringAsValue
      */
     searchMapsFor(term: string):Cypress.Chainable<JQuery<HTMLElement>>
   }
