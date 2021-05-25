@@ -24,5 +24,11 @@ declare namespace Cypress {
      * @example cy.searchMapFor('cypress.io')
      */
     searchMapsFor(term: string):Cypress.Chainable<JQuery<HTMLElement>>
+    /**
+     * Changes to dark mode
+     *
+     * @example cy.changeToDarkMode()
+     */
+     changeToDarkMode():Cypress.Chainable<JQuery<HTMLElement>>
   }
 }

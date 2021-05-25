@@ -20,13 +20,7 @@ describe('DuckDuckGo', () => {
 
   it('searches and changes to dark mode', () => {
     cy.search('cypress.io')
-    // Lets move this to a custom command?
-    cy.get('.dropdown--settings a')
-      .should('be.visible')
-      .click()
-    cy.get('.set-theme:not([style="background-color: #ffffff"])')
-      .should('be.visible')
-      .click({force: true})
+    cy.changeToDarkMode()
 
     cy.get('body')
       .should('have.css', 'background-color', 'rgb(28, 28, 28)')

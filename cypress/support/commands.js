@@ -17,3 +17,12 @@ Cypress.Commands.add('searchMapsFor', term => {
     .contains('Maps')
     .click()
 })
+
+Cypress.Commands.add('changeToDarkMode', () => {
+  cy.get('.dropdown--settings a')
+    .should('be.visible')
+    .click()
+  cy.get('.set-theme:not([style="background-color: #ffffff"])')
+    .should('be.visible')
+    .click({force: true})
+})
