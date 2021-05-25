@@ -7,7 +7,8 @@ declare namespace Cypress {
      *
      * @example cy.changeToDarkMode()
      */
-     changeToDarkMode():Cypress.Chainable<JQuery<HTMLElement>>
+    changeToDarkMode():Cypress.Chainable<JQuery<HTMLElement>>
+
      /**
      * Counts all elements that match the following selector:
      *
@@ -18,12 +19,14 @@ declare namespace Cypress {
      * @example cy.countResults().should('be.equal', 10)
      */
     countResults(): Cypress.Chainable<number>
+
     /**
      * Searches for the specified term by typing and pressing ENTER
      *
      * @example cy.search('cypress.io')
      */
     search(term: string): Cypress.Chainable<JQuery<HTMLElement>>
+
     /**
      * Searches by a term and goes to the maps view
      * 
