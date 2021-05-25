@@ -1,4 +1,4 @@
-/// <reference types="cypress" />
+
 
 Cypress.Commands.add('search', term => {
   cy.get('input[type="text"]')
